@@ -35,10 +35,10 @@ public class MainActivity extends AppCompatActivity {
         auth = FirebaseAuth.getInstance();
         analytics = FirebaseAnalytics.getInstance(this);
 
-        FirebaseUser user = auth.getCurrentUser();
-        if( user != null){
-            afterSignin();
-        }
+//        FirebaseUser user = auth.getCurrentUser();
+//        if( user != null){
+//            afterSignin();
+//        }
     }
 
     public void signin(View view){
@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void afterSignin(){
-        Intent intent = new Intent(this,MainActivity.class);
+        Intent intent = new Intent(this,HomeActivity.class);
         startActivity(intent);
         finish();
     }
