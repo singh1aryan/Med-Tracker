@@ -1,5 +1,6 @@
 package com.hackumass.med.medapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -13,6 +14,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.SeekBar;
+import android.widget.TextView;
 
 import com.jjoe64.graphview.GraphView;
 import com.jjoe64.graphview.series.DataPoint;
@@ -24,6 +26,7 @@ public class HomeActivity extends AppCompatActivity
     //FirebaseDatabase database = FirebaseDatabase.getInstance();
 
     SeekBar seekBar;
+    TextView textView,user,email;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +39,15 @@ public class HomeActivity extends AppCompatActivity
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
+
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(HomeActivity.this,AddActivity.class);
+                startActivity(i);
+            }
+        });
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
@@ -65,6 +77,16 @@ public class HomeActivity extends AppCompatActivity
         graph1.addSeries(series1);
 
         seekBar = findViewById(R.id.seekBar);
+        textView = findViewById(R.id.text);
+        user = findViewById(R.id.user);
+        email = findViewById(R.id.email);
+
+        Intent intent = getIntent();
+        String name = intent.getStringExtra("username");
+        String userN = name.split("@")[0];
+        textView.setText(name.charAt(0)+"");
+
+        user.setText(userN);
 
     }
 

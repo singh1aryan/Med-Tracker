@@ -83,7 +83,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void afterSignin(){
-        Intent intent = new Intent(this,HomeActivity.class);
+        Intent intent = new Intent(this,Home2Activity.class);
+        intent.putExtra("username", email.getText());
+        intent.putExtra("password",password.getText());
         startActivity(intent);
         finish();
     }

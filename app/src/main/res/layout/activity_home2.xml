@@ -4,8 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:showIn="@layout/app_bar_home"
     android:layout_height="match_parent"
     >
 
@@ -19,7 +17,7 @@
             android:elevation="20dp"
             app:cardElevation="20dp"
             android:layout_margin="10dp"
-            android:backgroundTint="@color/colorPrimaryDark"
+            android:backgroundTint="@color/colorPrimary"
             android:layout_height="wrap_content">
 
             <LinearLayout
@@ -30,6 +28,7 @@
                 >
 
                 <TextView
+                    android:id="@+id/name"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:textColor="#fff"
@@ -45,7 +44,7 @@
             android:elevation="20dp"
             app:cardElevation="20dp"
             android:layout_margin="10dp"
-            android:backgroundTint="@color/colorPrimaryDark"
+            android:backgroundTint="@color/colorPrimary"
             android:layout_height="wrap_content">
 
             <LinearLayout
@@ -55,12 +54,14 @@
                 android:layout_margin="10dp"
                 >
                 <TextView
+                    android:id="@+id/age"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:textColor="#fff"
                     android:layout_weight="1"
                     android:text="Age: " />
                 <TextView
+                    android:id="@+id/sex"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:textColor="#fff"
@@ -127,7 +128,7 @@
             android:layout_marginRight="10dp"
             android:layout_height="wrap_content"
             android:textColor="@color/colorPrimaryDark"
-            android:text="The most common Things"
+            android:text="The most common Remedies"
             android:textStyle="bold"
             android:gravity="center"
             />
@@ -167,7 +168,7 @@
             android:elevation="20dp"
             app:cardElevation="20dp"
             android:layout_margin="10dp"
-            android:backgroundTint="@color/colorPrimaryDark"
+            android:backgroundTint="@color/colorPrimary"
             android:layout_height="wrap_content">
 
             <LinearLayout
