@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="50dp"
+        android:background="@color/colorPrimaryDark"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome patient"
+            android:textSize="35sp"
+            android:textColor="#fff"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Roberto Enrique Clemente essional baseball right fielder who played 18 seasons in Major League Baseball for the Pittsburgh Pirates. He was inducted into the National Baseball Hall of Fame in 1973, becoming the first Latin American and Caribbean player to be enshrined"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:layout_marginTop="25dp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center">
+
+            <Button
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:background="@drawable/button"
+                android:text="Learn more"/>
+
+            <Button
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button2"
+                android:textColor="#fff"
+                android:text="join us"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:layout_width="350dp"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/user"
+            android:layout_height="wrap_content"
+            android:id="@+id/email"
+            android:text="USERNAME"/>
+
+        <EditText
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/pw"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            android:inputType="textPassword"
+            android:text="PASSWORD"
+            />
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:onClick="signin"
+            android:background="@drawable/button"
+            android:textColor="#fff"
+            />
+        <TextView
+            android:layout_marginTop="15dp"
+            android:textColor="#000"
+            android:id="@+id/textView"
+            android:onClick="SignupAct"
+            android:layout_width="wrap_content"
+            android:text="Have an account? Sign In"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "602096312418",
+    "firebase_url": "https://medapp-3e197.firebaseio.com",
+    "project_id": "medapp-3e197",
+    "storage_bucket": "medapp-3e197.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:602096312418:android:9b53154ef5443c18",
+        "android_client_info": {
+          "package_name": "com.hackumass.med.medapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "602096312418-smoskp8iocshuiia0vr9mtf7d2m71pvj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hackumass.med.medapp",
+            "certificate_hash": "37cf91ce2e6f31b900981bdee027dadbce40adac"
+          }
+        },
+        {
+          "client_id": "602096312418-6tu50ekmufu91b3o3uc86g2ff3i6gmbb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxZBL3zJA5X8PG7FUC16g_gzNv1i17PCc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "602096312418-6tu50ekmufu91b3o3uc86g2ff3i6gmbb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
