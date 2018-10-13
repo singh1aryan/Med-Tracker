@@ -42,7 +42,8 @@
 
         <activity android:name=".AddActivity" />
         <activity android:name=".Home2Activity" />
-        <activity android:name=".SettingsActivity"></activity>
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".HistoryActivity"></activity>
     </application>
 
 </manifest>

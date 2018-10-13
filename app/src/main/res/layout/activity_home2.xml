@@ -3,191 +3,220 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
-    >
+    android:background="@color/graylight"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:orientation="vertical"
-        android:layout_height="wrap_content">
-
-        <android.support.v7.widget.CardView
+        android:layout_height="match_parent">
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:elevation="20dp"
-            app:cardElevation="20dp"
-            android:layout_margin="10dp"
-            android:backgroundTint="@color/colorPrimary"
-            android:layout_height="wrap_content">
-
+            android:layout_height="345dp">
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_margin="10dp"
-                >
-
+                android:layout_height="310dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_marginTop="25dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:text="A"
+                    android:gravity="center"
+                    android:textColor="#fff"
+                    android:textSize="40dp"
+                    android:background="@drawable/bluecircle"
+                    />
                 <TextView
                     android:id="@+id/name"
-                    android:layout_width="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="#fff"
-                    android:layout_weight="1"
-                    android:text="Name: " />
+                    android:text="Wiliam Snoe"
+                    android:textColor="@color/gray"
+                    android:textStyle="bold"
+                    android:textSize="21sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Weekly Stats: "
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    />
             </LinearLayout>
 
+            <android.support.v7.widget.CardView
+                android:layout_width="400dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="215dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Health Index"
+                            android:textSize="20sp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1/4"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:paddingTop="10dp"
+                            android:textColor="@color/startblue"/>
 
-        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pain"
+                            android:textSize="20sp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2.5/4"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:paddingTop="10dp"
+                            android:textColor="@color/startblue"/>
 
-        <android.support.v7.widget.CardView
-            android:layout_width="match_parent"
-            android:elevation="20dp"
-            app:cardElevation="20dp"
-            android:layout_margin="10dp"
-            android:backgroundTint="@color/colorPrimary"
-            android:layout_height="wrap_content">
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Improvements: "
+                            android:textSize="18sp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="4/5"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:paddingTop="10dp"
+                            android:textColor="@color/startblue"/>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_margin="10dp"
-                >
-                <TextView
-                    android:id="@+id/age"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:textColor="#fff"
-                    android:layout_weight="1"
-                    android:text="Age: " />
-                <TextView
-                    android:id="@+id/sex"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:textColor="#fff"
-                    android:layout_weight="1"
-                    android:text="Sex: " />
-            </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
 
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
 
-        </android.support.v7.widget.CardView>
-
-        <android.support.v7.widget.CardView
-            android:layout_width="match_parent"
-            android:elevation="20dp"
-            app:cardElevation="20dp"
-            android:layout_margin="10dp"
-            android:layout_height="wrap_content">
-
-            <com.jjoe64.graphview.GraphView
-                android:layout_width="match_parent"
-                android:layout_height="200dip"
-                android:id="@+id/graph" />
-
-        </android.support.v7.widget.CardView>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:textColor="@color/colorPrimaryDark"
-            android:textStyle="bold"
-            android:text="Your profile according to the smart Doc"
-            android:gravity="center"
-            android:layout_height="wrap_content" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:id="@+id/intake"
-            android:textColor="@color/colorPrimaryDark"
-            android:textStyle="bold"
-            android:layout_height="100dp" />
-
-        <TextView
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_width="360dp"
             android:layout_height="wrap_content"
-            android:text="Your overall health is:"
-            android:gravity="center"
-            android:layout_marginTop="10dp"
-            android:textColor="@color/colorPrimaryDark"
-            android:textStyle="bold"
-            />
-
-        <SeekBar
-            android:layout_width="match_parent"
-            android:layout_marginRight="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginBottom="10dp"
-            android:id="@+id/seekBar"
-            android:progress="50"
-            android:layout_height="20dp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_height="wrap_content"
-            android:textColor="@color/colorPrimaryDark"
-            android:text="The most common Remedies"
-            android:textStyle="bold"
-            android:gravity="center"
-            />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_height="100dp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Pain levels on daily basis"
+            android:orientation="vertical"
             android:layout_gravity="center"
-            android:gravity="center"
-            android:textStyle="bold"
-            android:textColor="@color/colorPrimaryDark"
-            />
-
-        <android.support.v7.widget.CardView
-            android:layout_width="match_parent"
-            android:elevation="20dp"
-            app:cardElevation="20dp"
-            android:layout_margin="10dp"
-            android:layout_height="wrap_content">
-
-            <com.jjoe64.graphview.GraphView
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:id="@+id/graph1" />
-
-        </android.support.v7.widget.CardView>
-
-        <android.support.v7.widget.CardView
-            android:layout_width="match_parent"
-            android:elevation="20dp"
-            app:cardElevation="20dp"
-            android:layout_margin="10dp"
-            android:backgroundTint="@color/colorPrimary"
-            android:layout_height="wrap_content">
-
+            android:layout_marginTop="10dp">
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_margin="10dp"
-                >
+                android:paddingLeft="25dp"
+                android:onClick="painGraph"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:onClick="painGraph"
+                    android:src="@drawable/graph"/>
 
                 <TextView
-                    android:layout_width="0dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="#fff"
-                    android:drawableRight="@drawable/go"
-                    android:layout_weight="1"
-                    android:text="Find the nearest Pharmacy: " />
+                    android:paddingLeft="20dp"
+                    android:onClick="painGraph"
+                    android:text="Pain Level Graph"/>
+
             </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:paddingLeft="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/notification"/>
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:text="Notifications"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:paddingLeft="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/meal"/>
+                <TextView
+                    android:textStyle="bold"
 
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:text="Meal Plan"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:paddingLeft="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/smoke"/>
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:text="Stop smoking campaign"/>
+            </LinearLayout>
+        </LinearLayout>
 
-        </android.support.v7.widget.CardView>
     </LinearLayout>
 </ScrollView>

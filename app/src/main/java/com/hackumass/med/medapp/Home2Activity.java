@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
@@ -16,39 +18,14 @@ public class Home2Activity extends AppCompatActivity {
 
     SeekBar seekBar;
     TextView name,age,sex;
+    LinearLayout painLevel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home2);
 
-        GraphView graph = (GraphView) findViewById(R.id.graph);
-        LineGraphSeries<DataPoint> series = new LineGraphSeries<DataPoint>(new DataPoint[] {
-                new DataPoint(0, 1),
-                new DataPoint(1, 5),
-                new DataPoint(2, 3),
-                new DataPoint(3, 2),
-                new DataPoint(4, 6)
-        });
-        graph.addSeries(series);
-
-        GraphView graph1 = (GraphView) findViewById(R.id.graph1);
-        LineGraphSeries<DataPoint> series1 = new LineGraphSeries<DataPoint>(new DataPoint[] {
-                new DataPoint(0, 1),
-                new DataPoint(1, 5),
-                new DataPoint(2, 3),
-                new DataPoint(3, 5),
-                new DataPoint(4, 3),
-                new DataPoint(5, 5),
-                new DataPoint(6, 3),
-                new DataPoint(7, 2),
-                new DataPoint(8, 6)
-        });
-        graph1.addSeries(series1);
-
         seekBar = findViewById(R.id.seekBar);
-        name = findViewById(R.id.name);
-        sex = findViewById(R.id.sex);
 
         // get the data from the database
     }
@@ -72,5 +49,10 @@ public class Home2Activity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void painGraph(View view){
+        CustomDialogueClass cdd=new CustomDialogueClass(this);
+        cdd.show();
     }
 }
