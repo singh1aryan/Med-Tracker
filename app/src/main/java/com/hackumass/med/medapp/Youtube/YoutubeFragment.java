@@ -1,7 +1,7 @@
 package com.hackumass.med.medapp.Youtube;
 
 import android.app.Activity;
-import android.app.Fragment;
+import android.support.v4.app.Fragment;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
@@ -75,16 +75,16 @@ public class YoutubeFragment extends Fragment {
 
 
         YouTubePlayerSupportFragment youTubePlayerFragment = YouTubePlayerSupportFragment.newInstance();
-        android.app.FragmentTransaction transaction = getChildFragmentManager().beginTransaction();
+        FragmentTransaction transaction = getChildFragmentManager().beginTransaction();
 
-        //final int commit1 = transaction.add(R.id.youtube_layout, youTubePlayerFragment).commit();
+        transaction.add(R.id.youtube_layout, youTubePlayerFragment).commit();
         youTubePlayerFragment.initialize(PlayerConfig.YOUTUBE_API, new YouTubePlayer.OnInitializedListener() {
 
             @Override
             public void onInitializationSuccess(YouTubePlayer.Provider provider, final YouTubePlayer player, boolean wasRestored) {
                 if (!wasRestored) {
-                    player.setPlayerStyle(YouTubePlayer.PlayerStyle.DEFAULT);
-                                player.loadVideo("N2WFtXm64Rs");
+                                player.setPlayerStyle(YouTubePlayer.PlayerStyle.DEFAULT);
+                                player.loadVideo("wb49-oV0F78");
                                 player.play();
                         }
             }

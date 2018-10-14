@@ -334,6 +334,7 @@
             <Button
                 android:id="@+id/add"
                 android:layout_width="150dp"
+                android:onClick="save"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/button"

@@ -4,44 +4,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/graylight"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.hackumass.med.medapp.Home3Activity"
+    tools:showIn="@layout/activity_home3"
     android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:orientation="vertical"
         android:layout_height="match_parent">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="220dp"
-                android:orientation="vertical">
-                <TextView
-                    android:id="@+id/initial"
-                    android:layout_marginTop="25dp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
-                    android:text="A"
-                    android:gravity="center"
-                    android:textColor="#fff"
-                    android:textSize="40dp"
-                    android:textAllCaps="true"
-                    android:background="@drawable/bluecircle"
-                    />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/initial"
+                android:layout_marginTop="25dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:text="A"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:textSize="40dp"
+                android:textAllCaps="true"
+                android:background="@drawable/bluecircle"
+                />
 
-                <TextView
-                    android:id="@+id/name"
-                    android:layout_marginTop="10dp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Wiliam Snoe"
-                    android:textColor="@color/gray"
-                    android:textStyle="bold"
-                    android:textAllCaps="true"
-                    android:textSize="21sp"/>
+            <TextView
+                android:id="@+id/name"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wiliam Snoe"
+                android:textColor="@color/gray"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textSize="21sp"/>
 
-            </LinearLayout>
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="360dp"
@@ -118,19 +120,22 @@
                 android:layout_marginTop="15dp"
                 android:orientation="horizontal"
                 android:paddingLeft="25dp"
+                android:onClick="history"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <ImageView
                     android:layout_width="36dp"
                     android:layout_height="36dp"
-                    android:src="@drawable/pill"/>
+                    android:onClick="history"
+                    android:src="@drawable/history"/>
                 <TextView
                     android:textStyle="bold"
                     android:layout_gravity="center_vertical"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingLeft="20dp"
-                    android:text="Medications"/>
+                    android:onClick="history"
+                    android:text="History"/>
             </LinearLayout>
         </LinearLayout>
 
@@ -162,6 +167,7 @@
                     android:text="Weather "/>
 
             </LinearLayout>
+
             <LinearLayout
                 android:layout_marginTop="15dp"
                 android:orientation="horizontal"
@@ -186,10 +192,12 @@
                 android:orientation="horizontal"
                 android:paddingLeft="25dp"
                 android:layout_width="match_parent"
+                android:onClick="smoking"
                 android:layout_height="wrap_content">
                 <ImageView
                     android:layout_width="36dp"
                     android:layout_height="36dp"
+                    android:onClick="smoking"
                     android:src="@drawable/smoke"/>
                 <TextView
                     android:textStyle="bold"
@@ -197,6 +205,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingLeft="20dp"
+                    android:onClick="smoking"
                     android:text="Stop smoking"/>
             </LinearLayout>
         </LinearLayout>

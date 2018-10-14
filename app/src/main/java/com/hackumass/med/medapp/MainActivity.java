@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void afterSignin(){
-        Intent intent = new Intent(this,Home2Activity.class);
+        Intent intent = new Intent(this,Home3Activity.class);
         intent.putExtra("username", email1);
         startActivity(intent);
         finish();
@@ -94,5 +94,6 @@ public class MainActivity extends AppCompatActivity {
     public void SignupAct(View view){
         Intent intent = new Intent(this,SignupActivity.class);
         startActivity(intent);
+        finish();
     }
 }

@@ -1,6 +1,7 @@
 package com.hackumass.med.medapp;
 
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -16,6 +17,7 @@ import com.abdeveloper.library.MultiSelectDialog;
 import com.abdeveloper.library.MultiSelectModel;
 import com.google.firebase.analytics.FirebaseAnalytics;
 import com.google.firebase.auth.FirebaseAuth;
+import com.hackumass.med.medapp.Database.MedOpenHelper;
 
 import java.util.ArrayList;
 import java.util.regex.Matcher;
@@ -96,7 +98,7 @@ public class SignupActivity extends AppCompatActivity {
                             Toast.LENGTH_LONG).show();
                 else
                 {
-                    Intent intent = new Intent(SignupActivity.this, Home2Activity.class);
+                    Intent intent = new Intent(SignupActivity.this, Home3Activity.class);
                     intent.putExtra("email",email);
                     intent.putExtra("password",password);
                     intent.putExtra("age",age);
@@ -105,6 +107,7 @@ public class SignupActivity extends AppCompatActivity {
                     intent.putExtra("alcohol",alcohol);
                     intent.putExtra("lifestyle",lifestyle);
                     intent.putExtra("pain",painLevel);
+                    intent.putExtra("from",true);
                     String medicationString="";
                     if (medications.size()>0) {
                         for (String medication : medications)
@@ -119,6 +122,7 @@ public class SignupActivity extends AppCompatActivity {
                     }
                     intent.putExtra("conditions",conditionString);
                     intent.putExtra("medications",medicationString);
+
                     startActivity(intent);
                 }
             }
@@ -285,5 +289,12 @@ public class SignupActivity extends AppCompatActivity {
         Pattern p = Pattern.compile(pattern);
         Matcher m = p.matcher(email);
         return m.matches();
+    }
+
+    public void signInMethod(View view){
+        Intent intent = new Intent(SignupActivity.this,MainActivity.class);
+        startActivity(intent);
+        finish();
+
     }
 }

@@ -25,10 +25,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".SignupActivity" />
-        <activity
-            android:name=".HomeActivity"
-            android:label="@string/title_activity_home"
-            android:theme="@style/AppTheme.NoActionBar" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -42,7 +38,6 @@
             android:value="@string/google_maps_key" />
 
         <activity android:name=".AddActivity" />
-        <activity android:name=".Home2Activity" />
         <activity android:name=".SettingsActivity" />
         <activity android:name=".HistoryActivity" />
         <activity android:name=".SmokingActivity" />
@@ -54,7 +49,11 @@
 
         <activity android:name=".MealActivity" />
         <activity android:name=".Weather.WeatherActivity" />
-        <activity android:name=".Youtube.YTActivity"></activity>
+        <activity android:name=".Youtube.YTActivity" />
+        <activity
+            android:name=".Home3Activity"
+            android:label="@string/title_activity_home3"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

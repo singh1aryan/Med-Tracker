@@ -10,19 +10,22 @@ public class Contract {
         // THESE ARE NAMES OF COLUMNS
         public static final String TABLE_NAME = "user_only";
         public static final String COLUMN_ID = "id";
-        public static final String COLUMN_NAME = "username";
         public static final String COLUMN_SMOKING = "smoking";
-        public static final String COLUMN_DRINKING = "drinking";
-        public static final String COLUMN_FEELING = "feeling";
+        public static final String COLUMN_ALCOHOL = "drinking";
+        public static final String COLUMN_PAIN = "pain";
+        public static final String COLUMN_DATE = "date";
+        public static final String COLUMN_MEDICATIONS = "medications";
+        public static final String COLUMN_SYMPTOMS = "conditions";
+
     }
 
-    // we put stuff here
-    // medicine for all symptoms
-    // Eg: 1 -- illness -- meds
-    public class SyMeds{
-        public static final String TABLE_NAME = "symptoms_meds";
-        public static final String COLUMN_ID = "id";
-        public static final String COLUMN_ILLNESS = "illness";
-        public static final String COLUMN_MEDS = "all_meds";
-    }
+//    // we put stuff here
+//    // medicine for all symptoms
+//    // Eg: 1 -- illness -- meds
+//    public class SyMeds{
+//        public static final String TABLE_NAME = "symptoms_meds";
+//        public static final String COLUMN_ID = "id";
+//        public static final String COLUMN_ILLNESS = "illness";
+//        public static final String COLUMN_MEDS = "all_meds";
+//    }
 }

@@ -7,14 +7,15 @@ package com.hackumass.med.medapp.Database;
 public class User {
 
     String name,symptoms;
-    int feeling;
+    int feeling,age;
     boolean smoking, drinking;
 
-    public User(String name, String symptoms, int feeling, boolean smoking, boolean drinking) {
+    public User(String name, String symptoms, int feeling, boolean smoking, boolean drinking,int age) {
         this.name = name;
         this.symptoms = symptoms;
         this.feeling = feeling;
         this.smoking = smoking;
         this.drinking = drinking;
+        this.age = age;
     }
 }
