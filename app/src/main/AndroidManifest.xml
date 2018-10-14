@@ -40,7 +40,6 @@
         <activity android:name=".AddActivity" />
         <activity android:name=".SettingsActivity" />
         <activity android:name=".HistoryActivity" />
-        <activity android:name=".SmokingActivity" />
 
         <receiver
             android:name=".MyReceiver"
@@ -53,7 +52,8 @@
         <activity
             android:name=".Home3Activity"
             android:label="@string/title_activity_home3"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".LifestyleActivity"></activity>
     </application>
 
 </manifest>

@@ -33,7 +33,7 @@ public class MedOpenHelper extends SQLiteOpenHelper {
                 Contract.User.COLUMN_PAIN + " INTEGER DEFAULT 0, " +
                 Contract.User.COLUMN_ALCOHOL + " INTEGER DEFAULT 0, " +
                 Contract.User.COLUMN_DATE + " TEXT, " +
-                Contract.User.COLUMN_SMOKING + " INTEGER DEFAULT 0, " +
+                Contract.User.COLUMN_SMOKING + " INTEGER DEFAULT 0 " +
                 " )";
 
         db.execSQL(user_table);

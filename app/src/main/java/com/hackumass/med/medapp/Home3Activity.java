@@ -3,6 +3,7 @@ package com.hackumass.med.medapp;
 import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.content.Intent;
+import android.net.Uri;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -119,16 +120,13 @@ public class Home3Activity extends AppCompatActivity {
     }
 
     public void smoking(View view){
-        Intent intent = new Intent(Home3Activity.this,SmokingActivity.class);
-        startActivity(intent);
+        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.youtube.com/watch?v=_3Scx-CwALg")));
     }
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
         if(requestCode == 3){
             if(resultCode == 8){
-
-
 
             }
         }

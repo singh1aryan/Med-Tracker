@@ -4,13 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.hackumass.med.medapp.SmokingActivity">
+    tools:context="com.hackumass.med.medapp.LifestyleActivity">
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:id="@+id/main"
-        android:layout_height="200dp"/>
+        android:layout_height="match_parent">
+
+
+
+    </LinearLayout>
+
 
 </LinearLayout>

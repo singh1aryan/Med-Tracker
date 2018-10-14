@@ -8,121 +8,312 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_pharmacy_near_you">Map</string>
 
+    <string name="title_activity_home3">Home3Activity</string>
+
     <string-array name="drugs">
-        <item>Abilify</item>
-        <item>Humira</item>
-        <item>Nexium</item>
-        <item>Crestor</item>
-        <item>Enbrel</item>
-        <item>Advair Diskus</item>
-        <item>Seretide</item>
-        <item>Remicade</item>
-        <item>Lantus Solostar</item>
-        <item>Neulasta</item>
-        <item>Copaxone</item>
-        <item>Rituxan</item>
-        <item>MabThera</item>
-        <item>Spiriva</item>
-        <item>Januvia</item>
-        <item>Lantus</item>
-        <item>Atripla</item>
+        <item>Klonopin</item>
+        <item>Caffeine</item>
+        <item>Curcumin</item>
+        <item>Ibuprofen</item>
+        <item>Midodrine</item>
+        <item>Propranolol</item>
+        <item>Adderall</item>
+        <item>Modafinil</item>
+        <item>Neurontin</item>
+        <item>Valdoxan</item>
+        <item>Prozac</item>
+        <item>Coffee</item>
+        <item>Lamictal</item>
         <item>Cymbalta</item>
-        <item>Avastin</item>
-        <item>Lyrica</item>
-        <item>OxyContin</item>
-        <item>Celebrex</item>
-        <item>Epogen</item>
-        <item>Truvada</item>
-        <item>Diovan</item>
-        <item>Levemir</item>
-        <item>Gleevec</item>
-        <item>Glivec</item>
-        <item>Herceptin</item>
-        <item>Vyvanse</item>
-        <item>Lucentis</item>
-        <item>Zetia</item>
-        <item>Combivent</item>
-        <item>Symbicort</item>
-        <item>Namenda</item>
-        <item>NovoLog FlexPen</item>
-        <item>Xarelto</item>
-        <item>NovoLog</item>
-        <item>Humalog</item>
-        <item>Suboxone</item>
-        <item>Viagra</item>
-        <item>Seroquel XR</item>
-        <item>One Touch Ultra</item>
-        <item>AndroGel</item>
-        <item>Enoxaparin</item>
-        <item>Ritalin</item>
-        <item>ProAir HFA</item>
-        <item>Alimta</item>
-        <item>Victoza</item>
-        <item>Synagis</item>
-        <item>Avonex</item>
-        <item>Renvela</item>
-        <item>Rebif</item>
-        <item>Cialis</item>
-        <item>Gilenya</item>
-        <item>Nasonex</item>
-        <item>Stelara</item>
-        <item>Restasis</item>
-        <item>Budesonide</item>
-        <item>Acetaminophen</item>
-        <item>Hydrocodone</item>
-        <item>Flovent HFA</item>
-        <item>Lovaza</item>
-        <item>Prezista</item>
-        <item>Isentress</item>
-        <item>Janumet</item>
-        <item>"Procrit, Eprex"</item>
-        <item>Doxycycline</item>
-        <item>Orencia</item>
-        <item>Amphetamine/dextroamphetamine</item>
-        <item>Vesicare</item>
-        <item>Dexilant</item>
-        <item>Humalog KwikPen</item>
-        <item>Neupogen</item>
-        <item>Lidocaine</item>
-        <item>Lunesta</item>
-        <item>Fenofibrate</item>
-        <item>Zytiga</item>
-        <item>Reyataz</item>
-        <item>Sensipar</item>
-        <item>Metoprolol</item>
-        <item>AcipHex</item>
+        <item>Sertraline</item>
+        <item>Oxycodone</item>
+        <item>Tylenol</item>
+        <item>Hydroxychloroquine</item>
+        <item>Folic acid</item>
+        <item>Omeprazole</item>
+        <item>Humira</item>
+        <item>Florinef</item>
+        <item>Magnesium</item>
+        <item>Calcium</item>
+        <item>Tramadol</item>
+        <item>Imuran</item>
+        <item>Norco</item>
+        <item>Vitamin d</item>
         <item>Synthroid</item>
-        <item>Avonex Pen</item>
-        <item>Prevnar 13</item>
-        <item>Xolair</item>
-        <item>Lipitor</item>
-        <item>levothyroxine</item>
-        <item>Benicar</item>
-        <item>Stribild</item>
-        <item>Zostavax</item>
-        <item>Pradaxa</item>
-        <item>Vytorin</item>
-        <item>Tamiflu</item>
-        <item>Xgeva</item>
-        <item>Evista</item>
-        <item>Xeloda</item>
-        <item>Aranesp</item>
-        <item>Ventolin HFA</item>
-        <item>divalproex sodium</item>
-        <item>Afinitor</item>
-        <item>Betaseron</item>
-        <item>Betaferon</item>
-        <item>Adderall XR</item>
-        <item>Complera</item>
+        <item>Ranitidine</item>
+        <item>Venlafaxine</item>
+        <item>Ondansetron</item>
+        <item>Amitriptyline</item>
+        <item>Gabapentin</item>
+        <item>CoQ10</item>
+        <item>Prednisone</item>
+        <item>Lexapro</item>
+        <item>Duloxetine</item>
+        <item>Seroquel</item>
+        <item>Probiotic</item>
+        <item>Metoprolol</item>
+        <item>Prilosec</item>
+        <item>Vitamin b12</item>
+        <item>Vitamin D3</item>
+        <item>Fish oil</item>
+        <item>Baclofen</item>
+        <item>Effexor</item>
+        <item>Levothyroxine</item>
+        <item>Wellbutrin</item>
+        <item>Ligament Restore</item>
+        <item>Lyrica</item>
+        <item>Clonazepam</item>
+        <item>Codeine</item>
+        <item>Lamotrigine</item>
+        <item>Naproxen</item>
+        <item>Allopurinol</item>
+        <item>Azathioprine</item>
+        <item>Spironolactone</item>
+        <item>Aspirin</item>
+        <item>gluten free diet</item>
+        <item>Keppra</item>
+        <item>Metformin</item>
+        <item>Budesonide</item>
+        <item>Panadol</item>
+        <item>Aleve</item>
+        <item>Ativan</item>
+        <item>Vyvanse</item>
+        <item>Albuterol</item>
+        <item>Iron</item>
+        <item>Coenzyme q-10</item>
+        <item>Zoloft</item>
+        <item>Fluoxetine</item>
+        <item>Marijuana</item>
+        <item>Savella</item>
+        <item>Nap</item>
+        <item>Diazepam</item>
+        <item>Water</item>
+        <item>Plaquenil</item>
+        <item>Xanax</item>
+        <item>Benadryl</item>
+        <item>Vitamins</item>
+        <item>Stretching</item>
+        <item>Vicodin</item>
+        <item>massage</item>
+        <item>Flexeril</item>
+        <item>Topamax</item>
+        <item>Multivitamin</item>
+        <item>Cleaning </item>
+        <item>Citalopram</item>
+        <item>Acetaminophen</item>
+        <item>Vitamin C</item>
+        <item>Armodafinil</item>
+        <item>excedrin migraine</item>
+        <item>Swimming</item>
+        <item>Compression Stockings</item>
+        <item>Salt tablets</item>
+        <item>Alprazolam</item>
+        <item>Escitalopram</item>
+        <item>Melatonin</item>
+        <item>Pentasa</item>
+        <item>CBD</item>
+        <item>Fludrocortisone</item>
+        <item>Hydrocortisone</item>
+        <item>Turmeric</item>
+        <item>Medication</item>
+        <item>Prednisolone</item>
+        <item>Meloxicam</item>
+        <item>Cyclobenzaprine</item>
+        <item>Topiramate</item>
+        <item>Morphine</item>
+        <item>salofalk</item>
+        <item>Walking</item>
+        <item>Sulfasalazine</item>
+        <item>Progesterone</item>
+        <item>Ritalin</item>
+        <item>Wore arch supports all day</item>
+        <item>cocodamol</item>
+        <item>Bupropion</item>
+        <item>Ginger</item>
+        <item>Sumatriptan</item>
+        <item>Naltrexone</item>
+        <item>heating pads</item>
+        <item>Liothyronine</item>
+        <item>Pregabalin</item>
+        <item>Paracetamol</item>
+        <item>Flonase</item>
+        <item>Probiotics</item>
+        <item>Pristiq</item>
+        <item>Zyrtec</item>
+        <item>Zantac</item>
+        <item>Triiodothyronine</item>
+        <item>THC</item>
+        <item>Zanaflex</item>
+        <item>Vitamin b complex</item>
+        <item>Nycopro Probiotic</item>
+        <item>Miralax</item>
+        <item>birth control</item>
+        <item>N-acetyl cysteine</item>
+        <item>Nystatin</item>
+        <item>Aromatherapy</item>
+        <item>physical therapy</item>
+        <item>Essential oils</item>
+        <item>Zinc</item>
+        <item>Exercise--walking</item>
+        <item>Therapy</item>
+        <item>Methylphenidate</item>
+        <item>Inderal</item>
+        <item>Low-FODMAP diet</item>
+        <item>colofac mr</item>
+        <item>Hemorrhoid Cream</item>
+        <item>Imodium</item>
+        <item>Biking</item>
+        <item>Mirtazapine</item>
+        <item>Contraceptive pill</item>
+        <item>Ventolin</item>
+        <item>Promethazine</item>
+        <item>Cellcept</item>
+        <item>Singulair</item>
+        <item>Tizanidine</item>
+        <item>Lansoprazole</item>
+        <item>Nortriptyline</item>
+        <item>Hydroxyzine</item>
+        <item>Fexofenadine</item>
+        <item>Dicyclomine</item>
+        <item>Methotrexate</item>
+        <item>Lithium</item>
+        <item>Buscopan</item>
+        <item>Cyclizine</item>
+        <item>Vitamin a</item>
+        <item>digestive enzyme</item>
+        <item>Cannabis</item>
+        <item>Diclofenac</item>
+        <item>Buspirone</item>
+        <item>Glutamine</item>
+        <item>Advil</item>
+        <item>Celebrex</item>
+        <item>Hydrocodone</item>
+        <item>omega-3</item>
+        <item>Multi-vitamin</item>
+        <item>Loratadine</item>
+        <item>Tums</item>
+        <item>Nabilone</item>
+        <item>Concerta</item>
+        <item>L-methylfolate</item>
+        <item>Echinacea preparation</item>
+        <item>Medical Marijuana</item>
+        <item>Effexor XR</item>
+        <item>Tramacet</item>
+        <item>Tumeric</item>
+        <item>Desloratadine</item>
+        <item>LDN</item>
+        <item>Methocarbamol</item>
+        <item>Ferrous fumarate</item>
+        <item>trazadone</item>
+        <item>Pain Medicine</item>
+        <item>heat pack</item>
+        <item>Imovane</item>
+        <item>Paracetamol with codeine</item>
+        <item>Mindfulness meditation</item>
+        <item>Iron Supplement</item>
+        <item>Colace</item>
+        <item>Dexilant</item>
+        <item>Gatorade</item>
+        <item>mesalamine enema</item>
+        <item>arcoxia</item>
+        <item>small frequent meals</item>
+        <item>Wake up slowly</item>
+        <item>rescue remedy night</item>
+        <item>Day Nurse</item>
+        <item>Evening Formula</item>
+        <item>Morning Formula</item>
+        <item>Sulfurzyme</item>
+        <item>Omegagize</item>
+        <item>Morphine bomb</item>
+        <item>HCL</item>
+        <item>Estradiol</item>
+        <item>neurostimulator implant</item>
+        <item>SAD Light Box</item>
+        <item>N-Acelcysteine</item>
+        <item>itires</item>
+        <item>Ocella</item>
+        <item>Modulen</item>
+        <item>Cabergoline</item>
+        <item>moxa</item>
+        <item>lax</item>
+        <item>mid day lax</item>
+        <item>capryl</item>
+        <item>bifido maximus</item>
     </string-array>
     <string-array name="conditions">
-        <item>Cough</item>
-        <item>Cold</item>
-        <item>Fever</item>
+        <item>Ulcerative colitis</item>
+        <item>Crohn\'s disease</item>
+        <item>Generalized anxiety disorder</item>
+        <item>Depression</item>
+        <item>Endometriosis</item>
+        <item>Migraine</item>
+        <item>Ehlers-Danlos syndrome</item>
+        <item>Chronic Migraines</item>
+        <item>Fibromyalgia</item>
+        <item>Irritable bowel syndrome</item>
+        <item>Lyme disease</item>
+        <item>POTS</item>
+        <item>Back pain</item>
+        <item>Rheumatoid arthritis</item>
+        <item>Hypothyroidism</item>
+        <item>Insomnia</item>
+        <item>Allergies</item>
+        <item>Chronic fatigue syndrome</item>
+        <item>Headaches</item>
+        <item>Idiopathic hypersomnia</item>
+        <item>Anxiety</item>
+        <item>joint pain</item>
+        <item>Fatigue</item>
+        <item>Arthritis</item>
+        <item>IBS</item>
+        <item>Asthma</item>
+        <item>Dysautonomia</item>
+        <item>GERD</item>
+        <item>Lupus</item>
+        <item>Postural Orthostatic Tachycardia Syndrome</item>
+        <item>Chronic Pain</item>
     </string-array>
     <string-array name="frequency_options">
         <item>week</item>
         <item>day</item>
     </string-array>
-    <string name="title_activity_home3">Home3Activity</string>
+    <string-array name="symptoms">
+        <item>Nausea</item>
+        <item>Anxiety</item>
+        <item>Fatigue</item>
+        <item>Depression</item>
+        <item>Stomach cramps</item>
+        <item>Diarrhea</item>
+        <item>Stomach Pain</item>
+        <item>Dizziness</item>
+        <item>Migraine</item>
+        <item>Abdominal pain</item>
+        <item>Constipation</item>
+        <item>Headache</item>
+        <item>Neck pain</item>
+        <item>Weakness</item>
+        <item>Fatigue and tiredness</item>
+        <item>Back pain</item>
+        <item>Insomnia</item>
+        <item>Muscle pain</item>
+        <item>Shoulder pain</item>
+        <item>Bloating</item>
+        <item>Dull</item>
+        <item>Sore throat</item>
+        <item>Shortness of breath</item>
+        <item>Chest pain</item>
+        <item>Irritability</item>
+        <item>Brain fog</item>
+        <item>Knee pain</item>
+        <item>Wrist pain</item>
+        <item>Hip pain</item>
+        <item>Joint pain</item>
+        <item>Vomiting</item>
+        <item>Chronic pain</item>
+        <item>Hand pain</item>
+        <item>Foot pain</item>
+        <item>Difficulty concentrating</item>
+        <item>Lower Back Pain</item>
+        <item>Leg pain</item>
+    </string-array>
 </resources>

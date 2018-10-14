@@ -240,8 +240,8 @@ public class SignupActivity extends AppCompatActivity {
                     public void onSelected(ArrayList<Integer> selectedIds, ArrayList<String> selectedNames, String dataString) {
                         //will return list of selected IDS
                         globalSelectedConditionIds=selectedIds;
+                        conditions=new ArrayList<>();
                         for (int i = 0; i < selectedIds.size(); i++) {
-                            conditions=new ArrayList<>();
                             conditions.add(selectedNames.get(i));
                         }
                     }
@@ -271,8 +271,8 @@ public class SignupActivity extends AppCompatActivity {
                     public void onSelected(ArrayList<Integer> selectedIds, ArrayList<String> selectedNames, String dataString) {
                         //will return list of selected IDS
                         globalSelectedMedicationIds=selectedIds;
+                        medications=new ArrayList<>();
                         for (int i = 0; i < selectedIds.size(); i++) {
-                            medications=new ArrayList<>();
                             medications.add(selectedNames.get(i));
                         }
                     }

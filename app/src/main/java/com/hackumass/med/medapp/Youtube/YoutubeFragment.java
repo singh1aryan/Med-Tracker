@@ -84,7 +84,7 @@ public class YoutubeFragment extends Fragment {
             public void onInitializationSuccess(YouTubePlayer.Provider provider, final YouTubePlayer player, boolean wasRestored) {
                 if (!wasRestored) {
                                 player.setPlayerStyle(YouTubePlayer.PlayerStyle.DEFAULT);
-                                player.loadVideo("wb49-oV0F78");
+                                player.loadVideo("N2WFtXm64Rs");
                                 player.play();
                         }
             }

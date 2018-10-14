@@ -55,7 +55,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/button2"
                 android:textColor="#fff"
-                android:text="join us"/>
+                android:text="Share"/>
 
         </LinearLayout>
     </LinearLayout>

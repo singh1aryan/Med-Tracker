@@ -35,7 +35,7 @@ public class MyReceiver extends BroadcastReceiver {
             mNotifyMgr.createNotificationChannel(channel);
         }
         NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(context,"mychannel")
-                .setSmallIcon(R.drawable.home)
+                .setSmallIcon(R.drawable.lifestyle)
                 .setContentTitle("Health Tracker")
                 .setContentText("Add your details for today")
                 .setPriority(NotificationCompat.PRIORITY_DEFAULT)
