@@ -28,12 +28,12 @@ public class HistoryActivity extends AppCompatActivity {
         medications.add(new Medication("Synthroid",1,1,true));
         medications.add(new Medication("Lipitor",1,1,true));
 
-        days.add(new History("Day 1",1,symptoms,medications));
-        days.add(new History("Day 2",2,symptoms,medications));
-        days.add(new History("Day 3",3,symptoms,medications));
-        days.add(new History("Day 4",1,symptoms,medications));
-        days.add(new History("Day 5",4,symptoms,medications));
-        days.add(new History("Day 6",3,symptoms,medications));
+        days.add(new History("10/6/2018",1,symptoms,medications));
+        days.add(new History("10/7/2018",2,symptoms,medications));
+        days.add(new History("10/8/2018",3,symptoms,medications));
+        days.add(new History("10/9/2018",1,symptoms,medications));
+        days.add(new History("10/10/2018",4,symptoms,medications));
+        days.add(new History("10/11/2018",3,symptoms,medications));
 
         rvAdapter=new RVAdapter(days);
         rv.setAdapter(rvAdapter);

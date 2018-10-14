@@ -53,7 +53,8 @@
             android:exported="true" />
 
         <activity android:name=".MealActivity" />
-        <activity android:name=".Weather.WeatherActivity"></activity>
+        <activity android:name=".Weather.WeatherActivity" />
+        <activity android:name=".Youtube.YTActivity"></activity>
     </application>
 
 </manifest>
