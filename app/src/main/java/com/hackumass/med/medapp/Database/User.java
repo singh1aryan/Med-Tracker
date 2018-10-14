@@ -6,16 +6,16 @@ package com.hackumass.med.medapp.Database;
 
 public class User {
 
-    String name,symptoms;
-    int feeling,age;
-    boolean smoking, drinking;
+    public String symptoms,medications,date;
+    public int pain;
+    public int smoking, alcohol;
 
-    public User(String name, String symptoms, int feeling, boolean smoking, boolean drinking,int age) {
-        this.name = name;
+    public User(String symptoms, int pain, int smoking, int alcohol, String medications,String date) {
         this.symptoms = symptoms;
-        this.feeling = feeling;
+        this.pain = pain;
         this.smoking = smoking;
-        this.drinking = drinking;
-        this.age = age;
+        this.alcohol = alcohol;
+        this.medications = medications;
+        this.date = date;
     }
 }

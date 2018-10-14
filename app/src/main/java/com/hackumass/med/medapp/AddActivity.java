@@ -21,6 +21,7 @@ import com.abdeveloper.library.MultiSelectDialog;
 import com.abdeveloper.library.MultiSelectModel;
 import com.hackumass.med.medapp.Database.Contract;
 import com.hackumass.med.medapp.Database.MedOpenHelper;
+import com.hackumass.med.medapp.Database.User;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -120,7 +121,7 @@ public class AddActivity extends AppCompatActivity {
                     contentValues.put(Contract.User.COLUMN_SMOKING, smoke);
 
                     long id = database.insert(Contract.User.TABLE_NAME, null, contentValues);
-
+                    User user = new User(symptomString,painLevel,smoke,alcohol,medicationString,date);
 
                     setResult(8, intent);
                     finish();
