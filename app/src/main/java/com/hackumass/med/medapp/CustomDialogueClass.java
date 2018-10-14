@@ -24,7 +24,6 @@ public class CustomDialogueClass extends Dialog implements
     public Activity c;
     public Dialog d;
     public GraphView graph;
-    public Button yes;
 
     public CustomDialogueClass(Activity a) {
         super(a);
@@ -60,17 +59,11 @@ public class CustomDialogueClass extends Dialog implements
                 new DataPoint(6, 3)
         });
         graph1.addSeries(series1);
-
-        yes = findViewById(R.id.yes);
-
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.yes:
-                c.finish();
-                break;
             default:
                 break;
         }

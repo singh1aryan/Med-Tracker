@@ -6,24 +6,36 @@
     android:padding="15dp"
     android:orientation="vertical" >
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Health level Quotient"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="#000"
+        android:layout_marginBottom="8dp"
+        />
     <com.jjoe64.graphview.GraphView
         android:id="@+id/graph"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"/>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pain level"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="#000"
+        android:layout_margin="8dp"
+        />
+
     <com.jjoe64.graphview.GraphView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginTop="10dp"
         android:layout_weight="1"
         android:id="@+id/graph1"
         />
-    <Button
-        android:id="@+id/yes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ok"
-        android:layout_gravity="center"/>
 
 </LinearLayout>

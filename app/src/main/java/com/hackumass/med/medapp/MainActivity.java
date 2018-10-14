@@ -21,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
     EditText email;
     EditText password;
 
+    String email1;
+
     FirebaseAuth auth;
     FirebaseAnalytics analytics;
 
@@ -31,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
         email = findViewById(R.id.email);
         password = findViewById(R.id.password);
+        email1 = email.getText().toString();
 
         auth = FirebaseAuth.getInstance();
         analytics = FirebaseAnalytics.getInstance(this);
@@ -84,8 +87,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void afterSignin(){
         Intent intent = new Intent(this,Home2Activity.class);
-        intent.putExtra("username", email.getText());
-        intent.putExtra("password",password.getText());
+        intent.putExtra("username", email1);
         startActivity(intent);
         finish();
     }

@@ -372,7 +372,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:drawableLeft="@drawable/user"
+                    android:drawableLeft="@drawable/pain"
                     android:drawablePadding="8dp"
                     android:gravity="center_vertical"
                     android:padding="4sp"

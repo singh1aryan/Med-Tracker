@@ -8,6 +8,7 @@
          location permissions for the 'MyLocation' functionality. 
     -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -43,7 +44,16 @@
         <activity android:name=".AddActivity" />
         <activity android:name=".Home2Activity" />
         <activity android:name=".SettingsActivity" />
-        <activity android:name=".HistoryActivity"></activity>
+        <activity android:name=".HistoryActivity" />
+        <activity android:name=".SmokingActivity" />
+
+        <receiver
+            android:name=".MyReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".MealActivity" />
+        <activity android:name=".Weather.WeatherActivity"></activity>
     </application>
 
 </manifest>

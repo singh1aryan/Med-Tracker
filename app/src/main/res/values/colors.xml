@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#27368b</color>
-    <color name="colorPrimaryDark">#23283a</color>
+    <color name="colorPrimaryDark">#262d46</color>
     <color name="colorAccent">#FF4081</color>
     <color name="pink">#fe104d</color>
 
@@ -11,4 +11,5 @@
     <color name="graylight">#fafafa</color>
 
     <color name="gray">#585656</color>
+    <color name="grayL">#9c9595</color>
 </resources>

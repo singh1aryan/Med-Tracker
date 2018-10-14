@@ -7,4 +7,121 @@
 
     <string name="action_settings">Settings</string>
     <string name="title_activity_pharmacy_near_you">Map</string>
+
+    <string-array name="drugs">
+        <item>Abilify</item>
+        <item>Humira</item>
+        <item>Nexium</item>
+        <item>Crestor</item>
+        <item>Enbrel</item>
+        <item>Advair Diskus</item>
+        <item>Seretide</item>
+        <item>Remicade</item>
+        <item>Lantus Solostar</item>
+        <item>Neulasta</item>
+        <item>Copaxone</item>
+        <item>Rituxan</item>
+        <item>MabThera</item>
+        <item>Spiriva</item>
+        <item>Januvia</item>
+        <item>Lantus</item>
+        <item>Atripla</item>
+        <item>Cymbalta</item>
+        <item>Avastin</item>
+        <item>Lyrica</item>
+        <item>OxyContin</item>
+        <item>Celebrex</item>
+        <item>Epogen</item>
+        <item>Truvada</item>
+        <item>Diovan</item>
+        <item>Levemir</item>
+        <item>Gleevec</item>
+        <item>Glivec</item>
+        <item>Herceptin</item>
+        <item>Vyvanse</item>
+        <item>Lucentis</item>
+        <item>Zetia</item>
+        <item>Combivent</item>
+        <item>Symbicort</item>
+        <item>Namenda</item>
+        <item>NovoLog FlexPen</item>
+        <item>Xarelto</item>
+        <item>NovoLog</item>
+        <item>Humalog</item>
+        <item>Suboxone</item>
+        <item>Viagra</item>
+        <item>Seroquel XR</item>
+        <item>One Touch Ultra</item>
+        <item>AndroGel</item>
+        <item>Enoxaparin</item>
+        <item>Ritalin</item>
+        <item>ProAir HFA</item>
+        <item>Alimta</item>
+        <item>Victoza</item>
+        <item>Synagis</item>
+        <item>Avonex</item>
+        <item>Renvela</item>
+        <item>Rebif</item>
+        <item>Cialis</item>
+        <item>Gilenya</item>
+        <item>Nasonex</item>
+        <item>Stelara</item>
+        <item>Restasis</item>
+        <item>Budesonide</item>
+        <item>Acetaminophen</item>
+        <item>Hydrocodone</item>
+        <item>Flovent HFA</item>
+        <item>Lovaza</item>
+        <item>Prezista</item>
+        <item>Isentress</item>
+        <item>Janumet</item>
+        <item>"Procrit, Eprex"</item>
+        <item>Doxycycline</item>
+        <item>Orencia</item>
+        <item>Amphetamine/dextroamphetamine</item>
+        <item>Vesicare</item>
+        <item>Dexilant</item>
+        <item>Humalog KwikPen</item>
+        <item>Neupogen</item>
+        <item>Lidocaine</item>
+        <item>Lunesta</item>
+        <item>Fenofibrate</item>
+        <item>Zytiga</item>
+        <item>Reyataz</item>
+        <item>Sensipar</item>
+        <item>Metoprolol</item>
+        <item>AcipHex</item>
+        <item>Synthroid</item>
+        <item>Avonex Pen</item>
+        <item>Prevnar 13</item>
+        <item>Xolair</item>
+        <item>Lipitor</item>
+        <item>levothyroxine</item>
+        <item>Benicar</item>
+        <item>Stribild</item>
+        <item>Zostavax</item>
+        <item>Pradaxa</item>
+        <item>Vytorin</item>
+        <item>Tamiflu</item>
+        <item>Xgeva</item>
+        <item>Evista</item>
+        <item>Xeloda</item>
+        <item>Aranesp</item>
+        <item>Ventolin HFA</item>
+        <item>divalproex sodium</item>
+        <item>Afinitor</item>
+        <item>Betaseron</item>
+        <item>Betaferon</item>
+        <item>Adderall XR</item>
+        <item>Complera</item>
+    </string-array>
+    <string-array name="conditions">
+        <item>Cough</item>
+        <item>Cold</item>
+        <item>Fever</item>
+    </string-array>
+    <string-array name="frequency_options">
+        <item>week</item>
+        <item>day</item>
+    </string-array>
 </resources>

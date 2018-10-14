@@ -22,9 +22,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Daily health "
+                android:text="Tell us about your day..."
                 android:textColor="#fff"
-                android:textSize="35sp" />
+                android:textSize="25sp" />
 
         </LinearLayout>
 
@@ -73,6 +73,7 @@
                         android:drawableLeft="@drawable/condition"
                         android:drawablePadding="8sp"
                         android:padding="4dp"
+                        android:gravity="center_vertical"
                         android:text="Add your symptoms"
                         android:textSize="18sp" />
 
@@ -126,6 +127,7 @@
                         android:drawableLeft="@drawable/pill"
                         android:drawablePadding="8sp"
                         android:padding="10dp"
+                        android:gravity="center_vertical"
                         android:text="Add your medications"
                         android:textSize="18sp" />
 
@@ -330,23 +332,14 @@
             </LinearLayout>
 
             <Button
+                android:id="@+id/add"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/button"
-                android:text="Register"
+                android:text="Add "
                 android:textColor="#fff" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#000"
-                android:text="Already have an account? Sign In"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:textSize="18sp"
-                android:layout_margin="10dp"
-                android:onClick="signInMethod"
-                />
+
         </LinearLayout>
     </LinearLayout>
 </ScrollView>

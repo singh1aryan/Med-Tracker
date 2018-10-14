@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Weather Details"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#000"
+                />
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:orientation="vertical"
+               android:layout_margin="20dp"
+               android:layout_height="50dp">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:orientation="horizontal"
+                   android:layout_weight="1">
+
+                   <ImageView
+                       android:layout_width="50dp"
+                       android:layout_height="match_parent"
+                       android:layout_marginRight="10dp"
+                       android:background="@drawable/home"/>
+                   <TextView
+                       android:layout_width="250dp"
+                       android:layout_height="match_parent"
+                       android:text="Amherst, massachusetts"
+                       android:layout_gravity="center_vertical"
+                       android:gravity="center_vertical"
+                       android:textSize="20sp"
+                       />
+
+               </LinearLayout>
+           </LinearLayout>
+
+            <TextView
+                android:id="@+id/summary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="22sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:padding="30dp"
+                android:layout_height="210dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/time"
+                        android:background="@drawable/date"
+                        android:layout_width="50dp"
+                        android:gravity="center"
+                        android:layout_height="50dp"
+                        android:textSize="18dp"
+                        android:text="Time: "
+                        />
+
+                    <ImageView
+                        android:id="@+id/humid"
+                        android:background="@drawable/humid"
+                        android:layout_width="50dp"
+                        android:gravity="center"
+                        android:layout_height="50dp"
+                        android:textSize="18dp"
+                        android:text="Time: "
+                        />
+                    <ImageView
+                        android:id="@+id/temp"
+                        android:background="@drawable/temp"
+                        android:layout_width="50dp"
+                        android:gravity="center"
+                        android:layout_height="50dp"
+                        android:textSize="18dp"
+                        android:text="Time: "
+                        />
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/hourlyRecyclerView"
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:layout_height="match_parent">
+
+                </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:textSize="18sp"
+                android:text="Try to remain indoor if the weather gets bad, enjoy the sun, stay away from extreme cold, and have fun. Take a raincoat or an umbrella if it is raining and dry yourself when you come indoors. "
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="Dark Sky API"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:layout_margin="10dp"
+                android:onClick="signInMethod"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
