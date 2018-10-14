@@ -4,15 +4,69 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.hackumass.med.medapp.LifestyleActivity">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="BMI Calculator"
+        android:textAllCaps="true"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="#000"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="A measure of body fat in adults"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:textColor="#000"
+        />
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        >
 
+        <EditText
+            android:id="@+id/weight"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:drawableLeft="@drawable/user"
+            android:drawablePadding="10dp"
+            android:hint="Body Weight"
+            android:inputType="numberDecimal" />
 
+        <EditText
+            android:id="@+id/height"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:drawableLeft="@drawable/pw"
+            android:drawablePadding="10dp"
+            android:hint="Height (cms)"
+            android:inputType="numberDecimal" />
 
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+        </LinearLayout>
     </LinearLayout>
 
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:text="Your BMI is :" />
 
 </LinearLayout>

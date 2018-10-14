@@ -19,15 +19,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Welcome patient"
-            android:textSize="35sp"
-            android:layout_gravity="center"
+            android:text="Welcome on board"
+            android:textSize="30sp"
             android:textColor="#fff"
             />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Roberto Enrique Clemente essional baseball right fielder who played 18 seasons in Major League Baseball for the Pittsburgh Pirates. He was inducted into the National Baseball Hall of Fame in 1973, becoming the first Latin American and Caribbean player to be enshrined"
+            android:text="Welcome to the daily health tracker and a perfect model to compare you with thousands of others with the same problem. Keep a track of your sad and happy days, along with gaining some knowledge about the same."
             android:textColor="#fff"
             android:textSize="15sp"
             android:layout_marginTop="15dp"
@@ -88,6 +87,7 @@
             />
 
         <Button
+            android:id="@+id/login"
             android:layout_marginTop="20dp"
             android:layout_width="150dp"
             android:layout_height="wrap_content"

@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -22,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     EditText password;
 
     String email1;
-
+    Button login;
     FirebaseAuth auth;
     FirebaseAnalytics analytics;
 
@@ -34,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         email = findViewById(R.id.email);
         password = findViewById(R.id.password);
         email1 = email.getText().toString();
-
+        login = findViewById(R.id.login);
         auth = FirebaseAuth.getInstance();
         analytics = FirebaseAnalytics.getInstance(this);
 

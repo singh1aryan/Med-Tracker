@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hackumass.med.medapp.SettingsActivity">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bluecircle"
+            android:text="A"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="50dp"
+            android:textColor="#fff"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray"
+            android:layout_gravity="center"
+            android:text="Username"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textSize="20dp"
+            android:id="@+id/user"
+            />
+        <TextView
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray"
+            android:layout_gravity="center"
+            android:text="Cough, cold, fever, not well, better than last week"
+            android:gravity="center"
+            android:textSize="16dp"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+       <LinearLayout
+           android:layout_width="360dp"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:layout_gravity="center"
+           android:layout_marginTop="10dp">
+           <LinearLayout
+               android:orientation="horizontal"
+               android:paddingLeft="25dp"
+               android:onClick="edit"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <ImageView
+                   android:layout_width="36dp"
+                   android:layout_height="36dp"
+                   android:onClick="edit"
+                   android:src="@drawable/edit"/>
+
+               <TextView
+                   android:textStyle="bold"
+                   android:layout_gravity="center_vertical"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:paddingLeft="20dp"
+                   android:onClick="edit"
+                   android:text="Edit profile"/>
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_marginTop="15dp"
+               android:orientation="horizontal"
+               android:paddingLeft="25dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <ImageView
+                   android:layout_width="36dp"
+                   android:layout_height="36dp"
+                   android:src="@drawable/notification"/>
+               <TextView
+                   android:textStyle="bold"
+                   android:layout_gravity="center_vertical"
+                   android:layout_width="250dp"
+                   android:layout_height="wrap_content"
+                   android:paddingLeft="20dp"
+                   android:text="Notifications"/>
+               <Switch
+                   android:id="@+id/notifswitch"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:paddingLeft="30dp"/>
+           </LinearLayout>
+           <LinearLayout
+               android:layout_marginTop="15dp"
+               android:orientation="horizontal"
+               android:paddingLeft="25dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <ImageView
+                   android:layout_width="36dp"
+                   android:layout_height="36dp"
+                   android:src="@drawable/meal"/>
+               <TextView
+                   android:textStyle="bold"
+
+                   android:layout_gravity="center_vertical"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:paddingLeft="20dp"
+                   android:text="Meal Plans"/>
+           </LinearLayout>
+           <LinearLayout
+               android:layout_marginTop="15dp"
+               android:orientation="horizontal"
+               android:paddingLeft="25dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <ImageView
+                   android:layout_width="36dp"
+                   android:layout_height="36dp"
+                   android:src="@drawable/pill"/>
+               <TextView
+                   android:textStyle="bold"
+                   android:layout_gravity="center_vertical"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:paddingLeft="20dp"
+                   android:text="Pharmacies"/>
+           </LinearLayout>
+       </LinearLayout>
+
+
+
+   </LinearLayout>
+</ScrollView>
