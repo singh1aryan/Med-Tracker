@@ -39,6 +39,7 @@ public class WeatherActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_weather);
+        getSupportActionBar().setTitle("Weather");
 
         hourlyRecyclerView = findViewById(R.id.hourlyRecyclerView);
         current_summary = findViewById(R.id.summary);

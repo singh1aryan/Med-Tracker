@@ -12,23 +12,6 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorPrimaryDark"
-            android:orientation="vertical"
-            android:padding="15dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Register"
-                android:textColor="#fff"
-                android:textSize="35sp" />
-
-        </LinearLayout>
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -114,22 +97,26 @@
             </LinearLayout>
 
 
-            <Button
+            <EditText
                 android:id="@+id/select_conditions"
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:background="@drawable/button"
-                android:text="tap here to Select your conditions"
-                android:textColor="#fff" />
-            <Button
+                android:drawablePadding="10dp"
+                android:focusableInTouchMode="false"
+                android:drawableLeft="@drawable/condition"
+                android:hint="Tap here to Select your conditions"
+                 />
+            <EditText
                 android:id="@+id/select_medications"
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/button"
-                android:text="tap here to Select your medications"
-                android:textColor="#fff" />
+                android:layout_marginTop="10dp"
+                android:drawablePadding="10dp"
+                android:focusableInTouchMode="false"
+                android:drawableLeft="@drawable/pill"
+                android:hint="Tap here to Select your medications"
+                 />
 
             <LinearLayout
                 android:layout_width="350dp"
@@ -145,8 +132,8 @@
                     android:drawableLeft="@drawable/smoke"
                     android:drawablePadding="8dp"
                     android:gravity="center_vertical"
-                    android:padding="4sp"
                     android:text="Do you smoke?"
+                    android:paddingTop="8sp"
                     android:textSize="16sp" />
 
                 <RadioGroup
@@ -182,9 +169,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1.7"
                     android:drawableLeft="@drawable/cup"
-                    android:drawablePadding="8dp"
+                    android:drawablePadding="4dp"
                     android:gravity="center_vertical"
-                    android:padding="4sp"
+                    android:paddingTop="8sp"
                     android:text="Do you drink alcohol?"
                     android:textSize="16sp" />
 

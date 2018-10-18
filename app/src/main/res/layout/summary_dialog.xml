@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:padding="15dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Positive things"
+        android:drawableLeft="@drawable/plus"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:layout_marginBottom="5dp"
+        />
+    <TextView
+       android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/pthings"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Negative things"
+        android:drawableLeft="@drawable/neg"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:layout_marginBottom="5dp"
+        />
+    <TextView
+        android:id="@+id/nthings"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        />
+
+</LinearLayout>

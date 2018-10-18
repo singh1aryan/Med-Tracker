@@ -23,6 +23,7 @@ public class HistoryActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_history);
+        getSupportActionBar().setTitle("History");
 
         rv= findViewById(R.id.history_rv);
         users = new ArrayList<>();

@@ -70,27 +70,29 @@
                     android:layout_height="wrap_content"
                     android:paddingLeft="20dp"
                     android:onClick="painGraph"
-                    android:text="Weekly Graphs"/>
+                    android:text="Weekly Summary"/>
 
             </LinearLayout>
             <LinearLayout
                 android:layout_marginTop="15dp"
                 android:orientation="horizontal"
                 android:paddingLeft="25dp"
+                android:onClick="summary"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <ImageView
                     android:layout_width="36dp"
                     android:layout_height="36dp"
-                    android:src="@drawable/meal"/>
+                    android:onClick="summary"
+                    android:src="@drawable/date"/>
                 <TextView
+                    android:onClick="summary"
                     android:textStyle="bold"
-
                     android:layout_gravity="center_vertical"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingLeft="20dp"
-                    android:text="Meal Plan"/>
+                    android:text="Weekly Report"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_marginTop="15dp"
@@ -148,13 +150,16 @@
                 android:layout_marginTop="15dp"
                 android:orientation="horizontal"
                 android:paddingLeft="25dp"
+                android:onClick="lifestyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <ImageView
+                    android:onClick="lifestyle"
                     android:layout_width="36dp"
                     android:layout_height="36dp"
                     android:src="@drawable/lifestyle"/>
                 <TextView
+                    android:onClick="lifestyle"
                     android:textStyle="bold"
                     android:layout_gravity="center_vertical"
                     android:layout_width="wrap_content"

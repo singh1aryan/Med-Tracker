@@ -53,7 +53,8 @@
             android:name=".Home3Activity"
             android:label="@string/title_activity_home3"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".LifestyleActivity"></activity>
+        <activity android:name=".LifestyleActivity" />
+        <activity android:name=".EditActivity" />
     </application>
 
 </manifest>

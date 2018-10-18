@@ -2,11 +2,13 @@ package com.hackumass.med.medapp;
 
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.SeekBar;
@@ -15,8 +17,12 @@ import android.widget.Toast;
 
 import com.abdeveloper.library.MultiSelectDialog;
 import com.abdeveloper.library.MultiSelectModel;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.analytics.FirebaseAnalytics;
+import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.hackumass.med.medapp.Database.MedOpenHelper;
 
 import java.util.ArrayList;
@@ -28,8 +34,8 @@ public class SignupActivity extends AppCompatActivity {
     TextView passEditText;
     TextView ageEditText;
     RadioGroup sexGroup;
-    Button conditionsButton;
-    Button medicationsButton;
+    EditText conditionsButton;
+    EditText medicationsButton;
     RadioGroup smokeGroup;
     RadioGroup alcoholGroup;
     RadioGroup lifestyleGroup;
@@ -48,6 +54,8 @@ public class SignupActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
+        getSupportActionBar().setTitle("Sign Up");
+
         registerButton=findViewById(R.id.register);
         emailEditText=findViewById(R.id.email);
         passEditText=findViewById(R.id.password);
@@ -98,32 +106,24 @@ public class SignupActivity extends AppCompatActivity {
                             Toast.LENGTH_LONG).show();
                 else
                 {
-                    Intent intent = new Intent(SignupActivity.this, Home3Activity.class);
-                    intent.putExtra("email",email);
-                    intent.putExtra("password",password);
-                    intent.putExtra("age",age);
-                    intent.putExtra("sex",sex);
-                    intent.putExtra("smoke",smoke);
-                    intent.putExtra("alcohol",alcohol);
-                    intent.putExtra("lifestyle",lifestyle);
-                    intent.putExtra("pain",painLevel);
-                    intent.putExtra("from",true);
-                    String medicationString="";
-                    if (medications.size()>0) {
-                        for (String medication : medications)
-                            medicationString += medication+",";
-                        medicationString = medicationString.substring(0, medicationString.length() - 1);
-                    }
-                    String conditionString="";
-                    if (conditions.size()>0) {
-                        for (String condition : conditions)
-                            conditionString += condition+",";
-                        conditionString = conditionString.substring(0, conditionString.length() - 1);
-                    }
-                    intent.putExtra("conditions",conditionString);
-                    intent.putExtra("medications",medicationString);
+                    auth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                        @Override
+                        public void onComplete(@NonNull Task<AuthResult> task) {
+                            if(task.isSuccessful()){
+                                FirebaseUser user = auth.getCurrentUser();
+                                Toast.makeText(SignupActivity.this,user.getEmail(),Toast.LENGTH_LONG).show();
+                                goThrough();
+                            }else {
+                                Log.e("LoginActivity",task.getException().getMessage());
+                                Toast.makeText(SignupActivity.this,task.getException().getMessage(),Toast.LENGTH_LONG).show();
+                            }
+                        }
+                    });
 
-                    startActivity(intent);
+
+
+
+
                 }
             }
         });
@@ -241,9 +241,13 @@ public class SignupActivity extends AppCompatActivity {
                         //will return list of selected IDS
                         globalSelectedConditionIds=selectedIds;
                         conditions=new ArrayList<>();
+                        String a = "";
                         for (int i = 0; i < selectedIds.size(); i++) {
                             conditions.add(selectedNames.get(i));
+                            a = a + selectedNames.get(i) + ", ";
                         }
+                        a = a.substring(0,a.length()-2);
+                        conditionsButton.setText(a);
                     }
                     @Override
                     public void onCancel() {
@@ -272,9 +276,13 @@ public class SignupActivity extends AppCompatActivity {
                         //will return list of selected IDS
                         globalSelectedMedicationIds=selectedIds;
                         medications=new ArrayList<>();
+                        String a = "";
                         for (int i = 0; i < selectedIds.size(); i++) {
                             medications.add(selectedNames.get(i));
+                            a = a + selectedNames.get(i) + ", ";
                         }
+                        a = a.substring(0,a.length()-2);
+                        medicationsButton.setText(a);
                     }
                     @Override
                     public void onCancel() {
@@ -296,5 +304,33 @@ public class SignupActivity extends AppCompatActivity {
         startActivity(intent);
         finish();
 
+    }
+
+    public void goThrough(){
+        Intent intent = new Intent(SignupActivity.this, Home3Activity.class);
+        intent.putExtra("email",email);
+        intent.putExtra("password",password);
+        intent.putExtra("age",age);
+        intent.putExtra("sex",sex);
+        intent.putExtra("smoke",smoke);
+        intent.putExtra("alcohol",alcohol);
+        intent.putExtra("lifestyle",lifestyle);
+        intent.putExtra("pain",painLevel);
+        intent.putExtra("from",true);
+        String medicationString="";
+        if (medications.size()>0) {
+            for (String medication : medications)
+                medicationString += medication+",";
+            medicationString = medicationString.substring(0, medicationString.length() - 1);
+        }
+        String conditionString="";
+        if (conditions.size()>0) {
+            for (String condition : conditions)
+                conditionString += condition+",";
+            conditionString = conditionString.substring(0, conditionString.length() - 1);
+        }
+        intent.putExtra("conditions",conditionString);
+        intent.putExtra("medications",medicationString);
+        startActivity(intent);
     }
 }

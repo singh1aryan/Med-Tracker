@@ -34,19 +34,19 @@
 
         <EditText
             android:id="@+id/weight"
-            android:layout_width="350dp"
+            android:layout_width="wrap_content"
             android:layout_height="60dp"
             android:drawableLeft="@drawable/user"
-            android:drawablePadding="10dp"
-            android:hint="Body Weight"
+            android:padding="10dp"
+            android:hint="Body Weight (kgs)"
             android:inputType="numberDecimal" />
 
         <EditText
             android:id="@+id/height"
-            android:layout_width="350dp"
+            android:layout_width="wrap_content"
             android:layout_height="60dp"
             android:drawableLeft="@drawable/pw"
-            android:drawablePadding="10dp"
+            android:padding="10dp"
             android:hint="Height (cms)"
             android:inputType="numberDecimal" />
 
@@ -61,6 +61,7 @@
 
     <TextView
         android:id="@+id/result"
+        android:onClick="calc"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_gravity="center"
@@ -68,5 +69,62 @@
         android:textSize="20dp"
         android:textColor="#000"
         android:text="Your BMI is :" />
+
+    <TextView
+        android:id="@+id/ans"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="#000" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:drawableLeft="@drawable/user"
+            android:gravity="center_vertical"
+            android:padding="4sp"
+            android:text="Sex:"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/select_sex"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="22sp"
+                android:padding="4sp"
+                android:text="Male" />
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="18sp"
+                android:padding="4sp"
+                android:text="Female" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/bmi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
 
 </LinearLayout>

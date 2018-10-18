@@ -39,6 +39,7 @@ public class Home3Activity extends AppCompatActivity {
         setContentView(R.layout.activity_home3);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Home");
 
         Intent i = getIntent();
         if(i.getBooleanExtra("from",false)){
@@ -78,18 +79,18 @@ public class Home3Activity extends AppCompatActivity {
             name.setText(n);
         }
 
-        boolean check = notifswitch.isChecked();
-        if(!check){
+//        boolean check = notifswitch.isChecked();
+//        if(!check){
             Intent intent = new Intent(Home3Activity.this, MyReceiver.class);
             PendingIntent pendingIntent = PendingIntent.getBroadcast(Home3Activity.this, 1, intent, 0);
             Calendar calendar = Calendar.getInstance();
             AlarmManager manager = (AlarmManager) getSystemService(ALARM_SERVICE);
             long time1 = calendar.getTimeInMillis();
             manager.set(AlarmManager.RTC_WAKEUP, time1 + 5000,pendingIntent);
-        }
-        else{
-
-        }
+//        }
+//        else{
+//
+//        }
     }
 
     @Override
@@ -137,6 +138,16 @@ public class Home3Activity extends AppCompatActivity {
 
     public void history(View view){
         Intent intent = new Intent(Home3Activity.this,HistoryActivity.class);
+        startActivity(intent);
+    }
+
+    public void summary(View view){
+        CustomDialogClass cdd=new CustomDialogClass(this);
+        cdd.show();
+    }
+
+    public void lifestyle(View view){
+        Intent intent = new Intent(Home3Activity.this,LifestyleActivity.class);
         startActivity(intent);
     }
 }

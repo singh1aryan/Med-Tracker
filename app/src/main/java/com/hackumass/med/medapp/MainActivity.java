@@ -2,6 +2,7 @@ package com.hackumass.med.medapp;
 
 import android.content.Intent;
 import android.support.annotation.NonNull;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -23,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     EditText password;
 
     String email1;
-    Button login;
+    Button login,share,learn;
     FirebaseAuth auth;
     FirebaseAnalytics analytics;
 
@@ -36,6 +37,10 @@ public class MainActivity extends AppCompatActivity {
         password = findViewById(R.id.password);
         email1 = email.getText().toString();
         login = findViewById(R.id.login);
+        share = findViewById(R.id.share);
+        learn = findViewById(R.id.learn);
+
+
         auth = FirebaseAuth.getInstance();
         analytics = FirebaseAnalytics.getInstance(this);
 
@@ -43,44 +48,50 @@ public class MainActivity extends AppCompatActivity {
 //        if( user != null){
 //            afterSignin();
 //        }
-    }
 
-    public void signin(View view){
-        String emailString = email.getEditableText().toString();
-        String pass = password.getEditableText().toString();
-
-        analytics.logEvent("signin_clicked",null);
-
-        auth.signInWithEmailAndPassword(emailString,pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+        share.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onComplete(@NonNull Task<AuthResult> task) {
-                if(task.isSuccessful()){
-                    FirebaseUser user = auth.getCurrentUser();
-                    Toast.makeText(MainActivity.this,user.getEmail(),Toast.LENGTH_LONG).show();
-                    afterSignin();
-                }else {
-                    Log.e("LoginActivity",task.getException().getMessage());
-                    Toast.makeText(MainActivity.this,task.getException().getMessage(),Toast.LENGTH_LONG).show();
-                }
+            public void onClick(View v) {
+                Intent sendIntent = new Intent();
+                sendIntent.setAction(Intent.ACTION_SEND);
+                sendIntent.putExtra(Intent.EXTRA_TEXT,
+                        "Hey check out my app at: https://play.google.com/store/apps/details?id=com.google.android.apps.plus");
+                sendIntent.setType("text/plain");
+                startActivity(sendIntent);
             }
         });
-    }
 
-    public void signup(View view){
-        String emailString = email.getEditableText().toString();
-        String pass = password.getEditableText().toString();
-
-        auth.createUserWithEmailAndPassword(emailString,pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+        learn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onComplete(@NonNull Task<AuthResult> task) {
-                if(task.isSuccessful()){
-                    FirebaseUser user = auth.getCurrentUser();
-                    Toast.makeText(MainActivity.this,user.getEmail(),Toast.LENGTH_LONG).show();
-                    afterSignin();
-                }else {
-                    Log.e("LoginActivity",task.getException().getMessage());
-                    Toast.makeText(MainActivity.this,task.getException().getMessage(),Toast.LENGTH_LONG).show();
-                }
+            public void onClick(View v) {
+                Snackbar.make(v, "Login Please", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+            }
+        });
+
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                login.setEnabled(false);
+                String emailString = email.getEditableText().toString();
+                String pass = password.getEditableText().toString();
+
+                analytics.logEvent("signin_clicked",null);
+
+                auth.signInWithEmailAndPassword(emailString,pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if(task.isSuccessful()){
+                            FirebaseUser user = auth.getCurrentUser();
+                            Toast.makeText(MainActivity.this,user.getEmail(),Toast.LENGTH_LONG).show();
+                            afterSignin();
+                        }else {
+                            login.setEnabled(true);
+                            Log.e("LoginActivity",task.getException().getMessage());
+                            Toast.makeText(MainActivity.this,task.getException().getMessage(),Toast.LENGTH_LONG).show();
+                        }
+                    }
+                });
             }
         });
     }

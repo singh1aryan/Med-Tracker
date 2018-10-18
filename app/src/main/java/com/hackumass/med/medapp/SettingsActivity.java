@@ -8,17 +8,23 @@ import android.widget.TextView;
 
 public class SettingsActivity extends AppCompatActivity {
 
-    TextView user;
+    TextView user,initial1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
+        getSupportActionBar().setTitle("Settings");
+//        getActionBar().setTitle("Settings");
 
         user = findViewById(R.id.user);
+        initial1 = findViewById(R.id.initial1);
 
         Intent i = getIntent();
+
         String a = i.getStringExtra("username");
         user.setText(a);
+
+        initial1.setText(a.charAt(0) + "");
 
     }
 

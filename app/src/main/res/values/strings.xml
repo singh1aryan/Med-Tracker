@@ -316,4 +316,24 @@
         <item>Lower Back Pain</item>
         <item>Leg pain</item>
     </string-array>
+
+    <string name="list">
+    <li> Good Sleep</li>\n
+    <li> Nutrition</li>\n
+    <li> Excercise</li>\n
+    </string>
+
+    <string name="nlist">
+    <li> Caffeine</li>\n
+    <li> Bad weather</li>\n
+    <li> Sore throat</li>\n
+    </string>
+
+    <string name="bmig">
+    <li> Caffeine</li>\n
+    <li> Bad weather</li>\n
+    <li> Sore throat</li>\n
+    </string>
+    <string name="title_activity_main2">Main2Activity</string>
+
 </resources>
