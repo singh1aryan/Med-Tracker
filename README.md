@@ -1,4 +1,4 @@
-# MedApp
+# Med Tracker
 
 Project completed during HackUMass 2018
 
